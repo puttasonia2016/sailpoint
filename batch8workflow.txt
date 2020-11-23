@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workflow PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Workflow explicitTransitions="true" name="batch 8 import workflow">
+  <Description>batch 8 hello world workflow</Description>
+  <Step icon="Start" name="Start" posX="121" posY="99">
+    <Transition to="print hello world"/>
+  </Step>
+  <Step icon="Stop" name="Stop" posX="671" posY="93"/>
+  <Step action="script:System.out.println(&quot;Hello world 8&quot;);" icon="Default" name="print hello world" posX="378" posY="96">
+    <Transition to="Stop"/>
+  </Step>
+</Workflow>
